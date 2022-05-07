@@ -10,3 +10,12 @@ let calc = () => {
   document.getElementById("all-in-total").innerHTML = billAmt.value;
   document.getElementById("total-for-each").innerHTML = amountPerPerson;
 };
+
+let reset = () => {
+  // Reset the form.
+  document.getElementById("bill-amount").value = "";
+  document.getElementById("people").value = "";
+  // Reset the HTML.
+  document.getElementById("all-in-total").innerHTML = "";
+  document.getElementById("total-for-each").innerHTML = "";
+};
