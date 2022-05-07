@@ -7,6 +7,6 @@ let calc = () => {
   // Split the bill amount among the people.
   const amountPerPerson = billAmt.value / noOfPeople.value;
   // Display the amount per person in the HTML.
-  document.getElementById("all-in-total").innerHTML += billAmt.value;
-  document.getElementById("total-for-each").innerHTML += amountPerPerson;
+  document.getElementById("all-in-total").innerHTML = billAmt.value;
+  document.getElementById("total-for-each").innerHTML = amountPerPerson;
 };
