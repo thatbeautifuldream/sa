@@ -7,7 +7,8 @@ let calc = () => {
   // Split the bill amount among the people.
   const amountPerPerson = billAmt.value / noOfPeople.value;
   // Display the amount per person in the HTML.
-  document.getElementById("all-in-total").innerHTML = billAmt.value;
+  const total = parseFloat(billAmt.value);
+  document.getElementById("all-in-total").innerHTML = total;
   document.getElementById("total-for-each").innerHTML = amountPerPerson;
 };
 
@@ -15,7 +16,7 @@ let reset = () => {
   // Reset the form.
   document.getElementById("bill-amount").value = "";
   document.getElementById("people").value = "";
-  // Reset the HTML.
+  // Reset the modal values.
   document.getElementById("all-in-total").innerHTML = "";
   document.getElementById("total-for-each").innerHTML = "";
 };
